@@ -4,7 +4,7 @@
 #include <random>
 #include <ctime>
 #include <ncurses.h>
-
+#include <stdlib.h>
 using namespace std;
 const char mapCodeUser = '@';
 const char mapCodeExit = 'E';
@@ -81,6 +81,7 @@ bool doesUserWantToPlay()
 }
 void display()
 {
+	system("cls");
 	for (int column = 0; column < mapColums; ++column)
 	{
 		for (int row = 0; row < mapRows; ++row)
